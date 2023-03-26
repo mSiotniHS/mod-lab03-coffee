@@ -3,7 +3,9 @@
 #include <gtest/gtest.h>
 #include "Automata.h"
 
-std::vector<std::string> drinks = { "Latte", "Cappuccino", "Espresso", "Hot chocolate", "Tea", "Raf" };
+std::vector<std::string> drinks = {
+        "Latte", "Cappuccino", "Espresso", "Hot chocolate", "Tea", "Raf"
+};
 std::vector<unsigned int> prices = { 4, 3, 2, 3, 2, 5 };
 
 

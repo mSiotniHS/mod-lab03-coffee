@@ -2,14 +2,14 @@
 // Created by mSiotniHS on 19.03.2023.
 //
 
-#ifndef MOD_LAB03_COFFEE_AUTOMATA_H
-#define MOD_LAB03_COFFEE_AUTOMATA_H
+#ifndef INCLUDE_AUTOMATA_H_
+#define INCLUDE_AUTOMATA_H_
 
 #include <string>
 #include <vector>
 
 class Automata {
-public:
+ public:
     enum State {
         Off,
         Wait,
@@ -27,7 +27,8 @@ public:
     State getState() const;
     void choice(unsigned int drinkNo);
     void cancel();
-private:
+
+ private:
     State currentState;
     unsigned int cash;
     std::vector<std::string> drinks;
@@ -39,4 +40,4 @@ private:
 };
 
 
-#endif //MOD_LAB03_COFFEE_AUTOMATA_H
+#endif //INCLUDE_AUTOMATA_H_

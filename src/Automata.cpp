@@ -6,7 +6,10 @@
 #include <algorithm>
 #include "../include/Automata.h"
 
-Automata::Automata(std::vector<std::string> drinks, std::vector<unsigned int> prices) {
+Automata::Automata(
+        std::vector<std::string> drinks,
+        std::vector<unsigned int> prices
+) {
     this->drinks = drinks;
     this->prices = prices;
 
@@ -87,6 +90,9 @@ Automata::State Automata::getState() const {
 void Automata::getMenu() const {
     std::cout << "    Coffee Machine Menu\n";
     for (size_t i = 0; i < drinks.size(); i++) {
-        std::cout << "(" << i+1 << ") " << drinks[i] << " [$" << prices[i] << "]\n";
+        std::cout
+            << "(" << i+1 << ") "
+            << drinks[i]
+            << " [$" << prices[i] << "]\n";
     }
 }
