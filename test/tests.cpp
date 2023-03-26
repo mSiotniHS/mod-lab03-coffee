@@ -63,3 +63,13 @@ TEST(test, scenario6) {
 
     EXPECT_EQ(Automata::State::Wait, automata.getState());
 }
+
+TEST(test, scenario7) {
+    Automata automata(drinks, prices);
+    automata.on();
+
+    automata.coin(4);
+    automata.cancel();
+
+    EXPECT_EQ(Automata::State::Wait, automata.getState());
+}
