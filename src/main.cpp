@@ -1,5 +1,6 @@
 //
 // Created by mSiotniHS on 19.03.2023.
+// Copyright 2023 mSiotniHS
 //
 
 #include <vector>
@@ -11,7 +12,9 @@ void reportState(const Automata& automata);
 std::string toString(const Automata::State& state);
 
 int main() {
-    std::vector<std::string> drinks = { "Latte", "Cappuccino", "Espresso", "Hot chocolate", "Tea", "Raf" };
+    std::vector<std::string> drinks = {
+            "Latte", "Cappuccino", "Espresso", "Hot chocolate", "Tea", "Raf"
+    };
     std::vector<unsigned int> prices = { 4, 3, 2, 3, 2, 5 };
 
     Automata automata(drinks, prices);
@@ -33,7 +36,9 @@ int main() {
 }
 
 void reportState(const Automata& automata) {
-    std::cout << "Current automata state: " << toString(automata.getState()) << std::endl;
+    std::cout
+        << "Current automata state: "
+        << toString(automata.getState()) << std::endl;
 }
 
 std::string toString(const Automata::State& state) {

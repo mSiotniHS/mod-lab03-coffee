@@ -1,5 +1,6 @@
 //
 // Created by mSiotniHS on 19.03.2023.
+// Copyright 2023 mSiotniHS
 //
 
 #include <iostream>
